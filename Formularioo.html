@@ -1,0 +1,234 @@
+<HTML>
+	<HEAD>
+		<TITLE>FORMULARIO</TITLE>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script language="JavaScript">
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+
+    str_segundo = new String (segundo)
+    if (str_segundo.length == 1)
+       segundo = "0" + segundo
+
+    str_minuto = new String (minuto)
+    if (str_minuto.length == 1)
+       minuto = "0" + minuto
+
+    str_hora = new String (hora)
+    if (str_hora.length == 1)
+       hora = "0" + hora
+
+    horaImprimible = hora + " : " + minuto + " : " + segundo
+
+    document.form_reloj.reloj.value = horaImprimible
+
+    setTimeout("mueveReloj()",1000)
+}
+</script>
+</head>
+
+<body onload="mueveReloj()">
+
+
+<form name="form_reloj">
+<input type="text" name="reloj" size="10" align="right" style="background-color : purple; color : White; font-family : Verdana, Arial, Helvetica; font-size : 8pt; text-align : center;" onfocus="window.document.form_reloj.reloj.blur()">
+	</HEAD>
+	<BODY>
+    <center>
+    <img src="IMAGENES/banner.gif" width="700" height="250">
+  </center>
+    <div id="contenedor">
+
+        <header>
+
+          <nav>
+<center>
+  
+        <li>
+          <a href="file:///C:/Users/ACER/Documents/Sitio%20web/Inicio.htm">Inicio</a>
+        </li>
+          <li>
+
+            <a href="file:///C:/Users/ACER/Documents/Sitio%20web/servicios%20que%20ofrecemos.htm">Servicios que ofrecemos</a>
+          </li>
+          <li>
+            <a href="file:///C:/Users/ACER/Documents/Sitio%20web/mas%20informacion.htm">Mas informacion</a>
+          </li>
+          <li>
+            
+            <a href="file:///C:/Users/ACER/Documents/Sitio%20web/Contactanos.htm">Contactanos</a>
+          </li> 
+                <li>
+            <a href="file:///C:/Users/ACER/Documents/Sitio%20web/Formularioo.html">Formulario</a>
+          </li>
+          </center> 
+          
+              <form>    
+               <input type="texto">
+               <input type="submit" value="Buscar">
+              </form> 
+          </aside>
+          <div class="clearfix"> </div>
+          </nav>
+          <center>
+<form action="/my-handling-form-page" method="post">
+ <ul>
+  <li>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="user_name">
+  </li>
+  <li>
+    <label for="mail">Correo electr&oacutenico:</label>
+    <input type="email" id="mail" name="user_mail">
+  </li>
+  <li>
+    <label for="msg">Mensaje , quejas , sugerencias u opiniones:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </li>
+ </ul>
+</form>
+
+<section>
+    <h2>Informaci&oacuten de contacto</h2>
+    <fieldset>
+      <legend>El servicio y trato proporcionado en Nail Studio By Vanny fue</legend>
+      <ul>
+          <li>
+            <label for="title_1">
+              <input type="radio" id="title_1" name="title" value="K" >
+              Excelente
+            </label>
+          </li>
+          <li>
+            <label for="title_2">
+              <input type="radio" id="title_2" name="title" value="Q">
+              Bueno
+            </label>
+          </li>
+          <li>
+            <label for="title_3">
+              <input type="radio" id="title_3" name="title" value="J">
+              Regular
+            </label>
+          </li>
+                    <li>
+            <label for="title_4">
+              <input type="radio" id="title_4" name="title" value="J">
+              Malo
+            </label>
+          </li>
+             
+      </ul>
+    </fieldset>
+    <p>
+      
+
+
+
+
+<form>
+  <fieldset>
+    <legend>Servicio que desea</legend>
+     <p>
+      <input type="radio" name="size" id="size_1" value="small">
+      <label for="size_1">Aplicaci&oacuten de U&ntildeas </label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_1" value="small">
+      <label for="size_2">Retiro de U&ntildeas</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_2" value="medium">
+      <label for="size_3">Gelish</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_4">Manicura</label>
+    </p>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_2" value="medium">
+      <label for="size_5">Pedicura</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_6">Aplicaci&oacuten de Pesta&ntildeas</label>
+    </p>
+     <p>
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_7">Planchado de Cejas</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_7">Retiro y Aplicaci&oacuten de U&ntildeas</label>
+    </p>
+  </fieldset>
+</form>
+
+<form>
+  <p>
+    <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
+    <label for="taste_1">¿Le agrad&oacute el resultado del servicio proporcionado?</label>
+  </p>
+  <p>
+    <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
+    <label for="taste_2">¿Volver&iacutea a venir?</label>
+  </p>
+</form>
+<section>
+    <h2>Informaci&oacuten de pago</h2>
+    <p>
+       <p>
+    <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
+    <label for="taste_2">Pago en Efectivo</label>
+  </p>
+      <label for="card">
+        <span>Tipo de tarjeta:</span>
+      </label>
+      <select id="card" name="usercard">
+        <option value="visa">Visa</option>
+        <option value="mc">Mastercard</option>
+        <option value="amex">American Express</option>
+        <option value="mercado pago">Mercado Pago</option>
+        <option value="esperia">Esperia</option>
+        <option value="paypal">PayPal</option>
+      </select>
+    </p>
+    <p>
+      <label for="number">
+        <span>N&uacutemero de tarjeta:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="tel" id="number" name="cardnumber">
+    </p>
+    <p>
+      <label for="date">
+        <span>Fecha de caducidad:</span>
+        <strong><abbr title="required">*</abbr></strong>
+        <em>el formato mm/aa</em>
+      </label>
+      <input type="date" id="date" name="expiration">
+    </p>
+    <p>
+      <label for="nic">
+        <span>Codigo de seguridad:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="tel" id="number" name="cardnic">
+    </p>
+</section>
+<p> <button type="submit">Validar el pago</button> </p>
+cuadro de texto
+<p>
+
+<input type="text" id="comment" name="comment" value="escribe aqui">
+</p>
+<p>
+contrase&ntildea
+<input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+</p>
+</BODY>
+</HTML>
